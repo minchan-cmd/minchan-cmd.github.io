@@ -17,6 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  height: 100%;
 }
 .item {
   outline: 1px solid black;
@@ -30,5 +31,5 @@ header {
 footer {
   outline: 1px solid black;
   padding: 20px;
-  background-color: #110000;
+  background-color: #11FFFF;
 }
