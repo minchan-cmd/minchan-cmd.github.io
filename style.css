@@ -7,9 +7,13 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  padding: 10px;
+  gap: 10px;
 }
 
 .box {
+  display: flex;  
   outline: 1px solid black;
   padding: 20px;
   background-color: yellow;
