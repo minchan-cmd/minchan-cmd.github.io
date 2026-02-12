@@ -26,6 +26,8 @@ body {
 header {
   flex: 0 0 60px;
   background-image: url("unnamed.png");
+  background-size: cover;
+  background-position: center;
 }
 
 footer {
