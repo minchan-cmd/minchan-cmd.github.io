@@ -2,11 +2,11 @@
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
       text-align: center;
+      height: 100%
     }
 
 header {
   border: 1px solid box;
-  margin: 20px;
   padding: 20px;
 }
 
@@ -27,6 +27,5 @@ header {
 
 footer {
   border: 1px solid box;
-  margin: 20px;
   padding: 20px;
 }
