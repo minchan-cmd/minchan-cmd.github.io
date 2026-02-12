@@ -46,6 +46,5 @@ header, footer {
 }
 
 .middle-item {
-  outline: 1px solid black;
-  flex: 1 1 0;
+  flex: 1;
   background-color: blue;
