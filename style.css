@@ -6,7 +6,7 @@
     }
 
 header {
-  border: 1px solid box;
+  outline: 1px solid box;
   padding: 20px;
 }
 
@@ -17,8 +17,7 @@ header {
   flex-wrap: wrap;
 }
 .item {
-  border: 1px solid black;
-  height: 200px;
+  outline: 1px solid black;
   flex: 1;
   align-self: flex-end;
   order: 2;
@@ -26,6 +25,6 @@ header {
 
 
 footer {
-  border: 1px solid box;
+  outline: 1px solid box;
   padding: 20px;
 }
