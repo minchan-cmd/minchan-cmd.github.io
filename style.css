@@ -5,11 +5,13 @@
       text-align: center;
       height: 100%;
       width: 100%;
+      flex-direction: column;
     }
 
 header {
   outline: 1px solid black;
   padding: 20px;
+  background-color: yellow;
 }
 
 .container {
@@ -23,10 +25,12 @@ header {
   flex: 1;
   align-self: flex-end;
   order: 2;
+  background-color: pink;
 }
 
 
 footer {
   outline: 1px solid black;
   padding: 20px;
+  background-color: #110000;
 }
