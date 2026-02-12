@@ -24,6 +24,11 @@ body {
   background-color: yellow;
 }
 
+header, footer {
+  flex: 0 0 60px;
+  background-color: yellow;
+}
+
 .middle-container {
   display: flex;
   justify-content: space-between;
@@ -31,7 +36,10 @@ body {
   flex-wrap: wrap;
   height: 100%;
   flex-direction: row;
+  flex: 1;
+  gap: 5px;    
 }
+
 .item {
   outline: 1px solid black;
   flex: 1;
