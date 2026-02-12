@@ -31,6 +31,7 @@ header, footer {
 
 .middle-container {
   display: flex;
+  border: 1px solid black;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
