@@ -1,22 +1,66 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>AI 트레이너 메인페이지</title>
+    <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-   <header class="box"></header>
 
-   <div class="middle-container">
-     <aside class="item">
-       <a href="https://naver.com" target="middle-item">네이버</a>
-     </aside>
-     <main class="middle-item"></main>
-     <aside class="item">3</aside>
-   </div>
+    <div class="container">
+        <!-- 상단 헤더 -->
+        <header>
+            <h1>AI Trainer</h1>
+        </header>
 
-   <footer class="box">아무거나</footer>
-  </div>
+        <main>
+            <!-- 왼쪽: 로그인/내정보 섹션 -->
+            <section class="left-panel">
+                <div id="auth-section" class="card">
+                    <div id="login-form">
+                        <h3>Login</h3>
+                        <input type="text" placeholder="아이디"><br>
+                        <button onclick="handleLogin()" class="btn-primary">로그인</button>
+                    </div>
+                    <div id="user-info" style="display: none;">
+                        <h3>내 정보</h3>
+                        <p>반가워요, <strong>득근이</strong>님!</p>
+                        <button onclick="handleLogout()" class="btn-sub">로그아웃</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 중앙: 운동 시작 섹션 -->
+            <section class="main-panel">
+                <div class="main-card">
+                    <h2>모음 ㅇㅅㅁ</h2>
+                    <button class="start-btn">운동 시작</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- 하단: 퀵 메뉴 및 튜토리얼 -->
+        <footer>
+            <div class="quick-menu">
+                <!-- 새 탭으로 유튜브 이동 -->
+                <button class="circle-btn" onclick="window.open('https://youtube.com')">벤</button>
+                <!-- 페이지 내 영상 팝업 -->
+                <button class="circle-btn" onclick="openVideo('https://youtube.com')">스</button>
+                <button class="circle-btn" onclick="openVideo('https://youtube.com')">데</button>
+            </div>
+            <p class="tutorial-text">튜토리얼 영상 보러가기</p>
+        </footer>
+    </div>
+
+    <!-- 영상 팝업 모달 -->
+    <div id="overlay" class="overlay" onclick="closeVideo()"></div>
+    <div id="videoModal">
+        <iframe id="videoPlayer" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe><br>
+        <button onclick="closeVideo()" class="btn-sub">닫기</button>
+    </div>
+
+    <!-- JS 파일 연결 -->
+    <script src="script.js"></script>
 </body>
-
 </html>
